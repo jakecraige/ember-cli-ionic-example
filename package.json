@@ -29,6 +29,7 @@
     "broccoli-asset-rev": "0.0.11",
     "ember-cli-cordova": "0.0.5",
     "ember-animated-outlet-mobile": "^1.0.3",
-    "broccoli-sass": "^0.2.1"
+    "broccoli-sass": "^0.2.1",
+    "lodash": "^2.4.1"
   }
 }
