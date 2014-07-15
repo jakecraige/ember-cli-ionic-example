@@ -1,0 +1,20 @@
+{{render 'nav'}}
+
+<div class="content scroll-content scroll ionic-scroll has-header has-tabs">
+  {{outlet}}
+</div>
+
+<div class="tabs tabs-icon-top">
+  {{#link-to 'directory' class='tab-item'}}
+    <i class="icon ion-home"></i>
+    Directory
+  {{/link-to}}
+  {{#link-to 'events' class='tab-item'}}
+  <i class="icon ion-star"></i>
+    Events
+  {{/link-to}}
+  {{#link-to 'account' class='tab-item'}}
+    <i class="icon ion-gear-a"></i>
+    Account
+  {{/link-to}}
+</div>

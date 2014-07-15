@@ -1,0 +1,6 @@
+@import 'ionic-overrides';
+
+.scroll-content {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
