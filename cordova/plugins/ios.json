@@ -1,22 +1,6 @@
 {
     "prepare_queue": {
-        "installed": [
-            {
-                "plugin": "org.apache.cordova.splashscreen",
-                "vars": {},
-                "topLevel": true
-            },
-            {
-                "plugin": "org.apache.cordova.dialogs",
-                "vars": {},
-                "topLevel": true
-            },
-            {
-                "plugin": "org.apache.cordova.statusbar",
-                "vars": {},
-                "topLevel": true
-            }
-        ],
+        "installed": [],
         "uninstalled": []
     },
     "config_munge": {
@@ -24,5 +8,4 @@
     },
     "installed_plugins": {},
     "dependent_plugins": {}
-}}
 }

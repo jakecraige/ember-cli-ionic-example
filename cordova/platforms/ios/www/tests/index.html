@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ionic</title>
+    <title>Ionic Tests</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,17 +11,39 @@
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/ionic.css">
+    <link rel="stylesheet" href="assets/test-support.css">
+    <style>
+      #ember-testing-container {
+        position: absolute;
+        background: white;
+        bottom: 0;
+        right: 0;
+        width: 640px;
+        height: 384px;
+        overflow: auto;
+        z-index: 9999;
+        border: 1px solid #ccc;
+      }
+      #ember-testing {
+        zoom: 50%;
+      }
+    </style>
   </head>
   <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
     <script>
       window.IonicENV = {"baseURL":"/","locationType":"hash","EmberENV":{"FEATURES":{}},"APP":{},"development":true,"appEnv":"development","nodeApiUrl":"http://localhost:3000/api/v1","apiUrl":"http://localhost:4200/api/v1","cordova":{"rebuildOnChange":false,"rebuildAsync":false,"emulate":false}};
       window.EmberENV = window.IonicENV.EmberENV;
     </script>
-    <script src="cordova.js"></script>
+    <script src="assets/test-support.js"></script>
     <script src="assets/vendor.js"></script>
     <script src="assets/ionic.js"></script>
+    <script src="testem.js"></script>
     <script>
-      window.Ionic = require('ionic/app')['default'].create(IonicENV.APP);
+      require('ionic/tests/test-helper');
     </script>
+    <script src="assets/test-loader.js"></script>
   </body>
 </html>

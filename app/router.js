@@ -6,9 +6,12 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('directory', function() {
-    this.route('show', { path: '/:directory_id' })
+    this.route('show', { path: '/:directory_id' });
   });
-  this.resource('events');
+
+  this.resource('events', function() {
+    this.route('show', { path: '/:event_id' });
+  });
   this.resource('account');
 });
 

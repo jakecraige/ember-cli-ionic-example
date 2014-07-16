@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   beforeModel: function() {
     var navCtrl = this.controllerFor('nav');
+
     if (this.get('title')) {
       navCtrl.set('title', this.get('title'));
     }
@@ -18,7 +19,6 @@ export default Ember.Route.extend({
     navCtrl.setProperties({
       backButton: false
     });
-
   },
 
   actions: {
