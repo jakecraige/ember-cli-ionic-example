@@ -1,6 +1,6 @@
 # Ionic
 
-This README outlines the details of collaborating on this Ember application.
+Simple example app that shows adding ionic sass files into an ember-cli app
 
 ## Installation
 
